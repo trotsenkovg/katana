@@ -1,8 +1,14 @@
+const defaultTheme = require("tailwindcss");
+
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  purge: false,
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'rinnegan': "url('/assets/img/6fc8e5b971565a7bb7b5c123c44ed1ce.jpg')"
+      })
+    },
   },
   variants: {
     extend: {},
