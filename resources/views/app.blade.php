@@ -7,7 +7,7 @@
         <title>Katana</title>
         <link rel="stylesheet" href="{{ URL::asset('assets/css/app.css') }}">
     </head>
-    <body>
+    <body class="bg-red-200">
     <div id="app"></div>
     <script type="text/javascript" src="{{ URL::asset('assets/js/app.js') }}"></script>
     </body>
