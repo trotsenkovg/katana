@@ -1853,7 +1853,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/assets/js/bootstrap.js");
  */
 
 
-__webpack_require__(/*! ./components/index */ "./resources/assets/js/components/index.js");
+__webpack_require__(/*! ./index */ "./resources/assets/js/index.js");
 
 /***/ }),
 
@@ -1888,10 +1888,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/index.js":
-/*!*************************************************!*\
-  !*** ./resources/assets/js/components/index.js ***!
-  \*************************************************/
+/***/ "./resources/assets/js/index.js":
+/*!**************************************!*\
+  !*** ./resources/assets/js/index.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1905,29 +1905,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "md:flex",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "md:flex-shrink-0",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-        className: "rounded-lg md:w-56",
-        src: "/img/shopping.jpg",
-        alt: "Woman paying for a purchase"
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "mt-4 md:mt-0 md:ml-6",
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "p-6 max-w-sm mx-auto my-40 bg-white rounded-xl shadow-md flex items-center space-x-4",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "uppercase tracking-wide text-sm text-indigo-600 font-bold",
-        children: "Marketing"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-        href: "/get-started",
-        className: "block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline",
-        children: "Finding customers for your new business"
+        className: "text-xl font-medium text-black",
+        children: "ChitChat"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-        className: "mt-2 text-gray-600",
-        children: "Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers."
+        className: "text-gray-500",
+        children: "You have a new message!"
       })]
-    })]
+    })
   });
 };
 
@@ -34484,9 +34472,12 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*!***************************************!*\
   !*** ./resources/assets/sass/app.css ***!
   \***************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nError: The `darkMode` config option must be either 'media' or 'class'.\n    at dark.unstable_stack (/home/trovagen/PhpstormProjects/katana/node_modules/tailwindcss/lib/lib/substituteVariantsAtRules.js:91:11)\n    at Object.handler (/home/trovagen/PhpstormProjects/katana/node_modules/tailwindcss/lib/util/generateVariantFunction.js:33:50)\n    at /home/trovagen/PhpstormProjects/katana/node_modules/tailwindcss/lib/lib/substituteVariantsAtRules.js:238:38\n    at arrayEach (/home/trovagen/PhpstormProjects/katana/node_modules/lodash/lodash.js:530:11)\n    at Function.forEach (/home/trovagen/PhpstormProjects/katana/node_modules/lodash/lodash.js:9410:14)\n    at /home/trovagen/PhpstormProjects/katana/node_modules/tailwindcss/lib/lib/substituteVariantsAtRules.js:233:25\n    at /home/trovagen/PhpstormProjects/katana/node_modules/postcss/lib/container.js:151:16\n    at /home/trovagen/PhpstormProjects/katana/node_modules/postcss/lib/container.js:74:18\n    at AtRule.each (/home/trovagen/PhpstormProjects/katana/node_modules/postcss/lib/container.js:60:16)\n    at AtRule.walk (/home/trovagen/PhpstormProjects/katana/node_modules/postcss/lib/container.js:71:17)\n    at processResult (/home/trovagen/PhpstormProjects/katana/node_modules/webpack/lib/NormalModule.js:676:19)\n    at /home/trovagen/PhpstormProjects/katana/node_modules/webpack/lib/NormalModule.js:778:5\n    at /home/trovagen/PhpstormProjects/katana/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /home/trovagen/PhpstormProjects/katana/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/home/trovagen/PhpstormProjects/katana/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/home/trovagen/PhpstormProjects/katana/node_modules/postcss-loader/dist/index.js:96:7)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -68412,7 +68403,41 @@ if (false) {} else {
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					result = fn();
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -68462,13 +68487,66 @@ if (false) {} else {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"/assets/js/app": 0,
+/******/ 			"assets/css/app": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			for(moduleId in moreModules) {
+/******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 					__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 				}
+/******/ 			}
+/******/ 			if(runtime) var result = runtime(__webpack_require__);
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkIds[i]] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	__webpack_require__("./resources/assets/js/app.js");
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./resources/assets/sass/app.css");
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	__webpack_require__.O(undefined, ["assets/css/app"], () => (__webpack_require__("./resources/assets/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/app"], () => (__webpack_require__("./resources/assets/sass/app.css")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
